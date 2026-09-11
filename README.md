@@ -2,86 +2,65 @@
 
 
 
-# [Project Name] 🎯
+#EXCUSE SIMULATOR
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [\SVAAG
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: GARGI S PISHARODY - JYOTHI ENGINEERING COLLEGE
+- Member 2: SREELAKSHMI S NAIR - JYOTHI ENGINEERING COLLEGE
+
 
 ### Project Description
-[2-3 lines about what your project does]
+The Excuse Simulator is a fun and intentionally useless project that generates funny excuses for different everyday scenarios. Users can choose a scenario and get creative, ridiculous, and entertaining excuses.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+The problem of not having a good excuse when you need one! 
+Excuse Simulator solves this completely unnecessary problem by generating funny and creative excuses for different everyday scenarios.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+A fun Excuse Simulator that instantly generates funny, ridiculous excuses for different everyday scenarios. Just choose a situation and let the simulator do the lying—purely for entertainment! 🤡
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+Languages: HTML, CSS, JavaScript
+Frameworks: None
+Libraries: None / Vanilla JavaScript
+Tools: VS Code, GitHub, Live Server, Web Browser
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+git clone <your-github-repository-link>
+cd Excuse-Simulator
 
 # Run
-[commands]
+Open index.html using Live Server in VS Code.
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Landing page](screenshots/landing-page.png)
+*The intro screen — a bobbing clown mascot with orbiting icons, twinkling stars, and floating excuse snippets, leading into the "Step Into the Excuse Zone" button.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Excuse generator - main screen](screenshots/main-simulator.png)
+*The main Excuse Simulator interface: pick a situation (college, friends, assignment, phone, family, work), set the believability dial, and generate.*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Generated excuse result](screenshots/generated-excuse.png)
+*A generated excuse in action ("My cat held me hostage for a second breakfast") with its believability score and verdict message.*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
+
 [Add your demo video link here]
 *Explain what the video demonstrates*
 
@@ -89,9 +68,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- SREELAKSHMI S NAIR: Designed the UI, created HTML/CSS structure, and worked on the overall layout and styling.
+- GARGI S PISHARODY: Developed JavaScript functionality, excuse generation logic, buttons, believability meter, and testing/debugging
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
