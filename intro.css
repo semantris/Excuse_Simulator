@@ -1,0 +1,224 @@
+/* ==========================================
+   Excuse Simulator — intro.css
+   Same family as style.css, tuned cuter:
+   soft violet sky, floating bubbles, bobbing mascot.
+   ========================================== */
+
+:root {
+  --sky-top: #7b5cff;
+  --sky-bottom: #ff4f9a;
+  --ink: #221233;
+  --paper: #fff8e7;
+  --teal: #22b8a6;
+  --coral: #ff6b4a;
+  --gold: #f4b400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  color: var(--paper);
+}
+
+.sky {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+}
+
+/* ---------- Stars ---------- */
+
+.star {
+  position: absolute;
+  color: var(--paper);
+  opacity: 0.8;
+  animation: twinkle 2.6s ease-in-out infinite;
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+
+.star--1 { top: 12%; left: 10%; animation-delay: 0s; }
+.star--2 { top: 20%; left: 85%; animation-delay: 0.4s; font-size: 1.1rem; }
+.star--3 { top: 70%; left: 8%;  animation-delay: 0.8s; font-size: 1rem; }
+.star--4 { top: 78%; left: 90%; animation-delay: 1.2s; }
+.star--5 { top: 8%;  left: 50%; animation-delay: 1.6s; font-size: 0.9rem; }
+.star--6 { top: 88%; left: 45%; animation-delay: 2s; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.85); }
+  50%      { opacity: 0.95; transform: scale(1.15); }
+}
+
+/* ---------- Floating excuse bubbles ---------- */
+
+.bubble-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -10%;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  white-space: nowrap;
+  box-shadow: 3px 3px 0 rgba(34, 18, 51, 0.4);
+  opacity: 0;
+  animation: floatUp 14s linear infinite;
+}
+
+.b1 { left: 6%;  animation-delay: 0s;  }
+.b2 { left: 60%; animation-delay: 2s;  }
+.b3 { left: 20%; animation-delay: 4s;  }
+.b4 { left: 75%; animation-delay: 6.5s; }
+.b5 { left: 40%; animation-delay: 9s;  }
+.b6 { left: 85%; animation-delay: 11.5s; }
+
+@keyframes floatUp {
+  0%   { transform: translateY(0) translateX(0) rotate(-3deg); opacity: 0; }
+  8%   { opacity: 0.9; }
+  50%  { transform: translateY(-55vh) translateX(18px) rotate(2deg); }
+  92%  { opacity: 0.9; }
+  100% { transform: translateY(-105vh) translateX(-12px) rotate(-2deg); opacity: 0; }
+}
+
+/* ---------- Stage / mascot ---------- */
+
+.stage {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.mascot-orbit {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 8px;
+}
+
+.mascot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  animation: bob 2.4s ease-in-out infinite;
+  filter: drop-shadow(4px 6px 0 rgba(34, 18, 51, 0.35));
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50%      { transform: translateY(-14px) rotate(4deg); }
+}
+
+.orbit-item {
+  position: absolute;
+  font-size: 1.6rem;
+  animation: orbit 7s linear infinite;
+  transform-origin: 80px 80px;
+}
+
+.o1 { animation-delay: 0s; }
+.o2 { animation-delay: -2.3s; }
+.o3 { animation-delay: -4.6s; }
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(78px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(78px) rotate(-360deg); }
+}
+
+/* ---------- Text ---------- */
+
+.intro-title {
+  font-family: "Baloo 2", cursive;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 9vw, 3.4rem);
+  margin: 10px 0 6px;
+  text-shadow: 3px 3px 0 var(--coral);
+}
+
+.intro-tagline {
+  margin: 0 0 26px;
+  font-weight: 500;
+  color: var(--paper);
+  opacity: 0.9;
+}
+
+/* ---------- Enter button ---------- */
+
+.enter-btn {
+  display: inline-block;
+  font-family: "Baloo 2", cursive;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ink);
+  background: var(--gold);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 14px 30px;
+  text-decoration: none;
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.enter-btn:hover {
+  transform: translateY(-3px);
+}
+
+.enter-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+.enter-btn:focus-visible {
+  outline: 3px solid var(--paper);
+  outline-offset: 3px;
+}
+
+.intro-footnote {
+  margin: 18px 0 0;
+  font-size: 0.75rem;
+  color: var(--paper);
+  opacity: 0.65;
+}
+
+/* ---------- Accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .star, .bubble, .mascot, .orbit-item {
+    animation: none;
+  }
+  .bubble {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .mascot-orbit {
+    width: 130px;
+    height: 130px;
+  }
+  .orbit-item {
+    transform-origin: 65px 65px;
+  }
+  .bubble {
+    font-size: 0.7rem;
+  }
+}
