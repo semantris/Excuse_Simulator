@@ -47,25 +47,17 @@ Open index.html using Live Server in VS Code.
 For Software:
 
 # Screenshots (Add at least 3)
-
-![Landing page](screenshots/landing-page.png)
+<img width="1887" height="945" alt="Screenshot 2026-09-12 014308" src="https://github.com/user-attachments/assets/00ca710a-b5b9-4f11-bb6b-58645b097812" />
 *The intro screen — a bobbing clown mascot with orbiting icons, twinkling stars, and floating excuse snippets, leading into the "Step Into the Excuse Zone" button.*
-
-![Excuse generator - main screen](screenshots/main-simulator.png)
+<img width="1883" height="952" alt="Screenshot 2026-09-12 014031" src="https://github.com/user-attachments/assets/f5fc0c45-009f-43f7-a745-6e4401885065" />
 *The main Excuse Simulator interface: pick a situation (college, friends, assignment, phone, family, work), set the believability dial, and generate.*
-
-![Generated excuse result](screenshots/generated-excuse.png)
+<img width="1882" height="957" alt="Screenshot 2026-09-12 014119" src="https://github.com/user-attachments/assets/3a1b2931-76d8-4cc1-ab3a-a85d800847c8" />
 *A generated excuse in action ("My cat held me hostage for a second breakfast") with its believability score and verdict message.*
 
 
 ### Project Demo
 # Video
-
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+https://drive.google.com/file/d/1gHakdPeBnlW0tfXs1rP74n8u-YBgUlGv/view?usp=drivesdk
 
 ## Team Contributions
 - SREELAKSHMI S NAIR: Designed the UI, created HTML/CSS structure, and worked on the overall layout and styling.
