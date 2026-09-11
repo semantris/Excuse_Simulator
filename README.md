@@ -45,8 +45,34 @@ Open index.html using Live Server in VS Code.
 
 ### Project Documentation
 For Software:
+## Technical Components
 
-# Screenshots (Add at least 3)
+**Frontend**
+- HTML5 — semantic markup for both pages
+- CSS3 — custom animations (`@keyframes`), flexbox layout, CSS variables for theming
+- Vanilla JavaScript (ES6) — no frameworks or build tools; runs directly in the browser
+
+**Structure**
+| File | Purpose |
+|---|---|
+| `intro.html` / `intro.css` / `intro.js` | Landing page — mascot animation, floating excuse bubbles, entry button |
+| `index.html` / `style.css` / `script.js` | Main app — situation picker, believability dial, excuse generator |
+
+**Browser APIs used**
+- **DOM API** — dynamic rendering of generated excuses and UI state
+- **Clipboard API** (`navigator.clipboard.writeText`) — powers the "Copy It" button
+- **Web Storage API** (`localStorage`) — persists the user's luck score across sessions
+- **CSS Animations** — mascot bobbing, orbiting icons, twinkling stars, floating bubbles
+
+**External resources**
+- Google Fonts — `Baloo 2` (headings/display) and `Space Grotesk` (body text)
+
+**Design approach**
+- Fully static, client-side site — no backend or database required
+- Responsive layout with breakpoints for smaller screens
+- Accessibility considerations: `aria-hidden` on decorative elements, `prefers-reduced-motion` support, focus-visible states
+
+# Screenshots 
 <img width="1887" height="945" alt="Screenshot 2026-09-12 014308" src="https://github.com/user-attachments/assets/00ca710a-b5b9-4f11-bb6b-58645b097812" />
 *The intro screen — a bobbing clown mascot with orbiting icons, twinkling stars, and floating excuse snippets, leading into the "Step Into the Excuse Zone" button.*
 <img width="1883" height="952" alt="Screenshot 2026-09-12 014031" src="https://github.com/user-attachments/assets/f5fc0c45-009f-43f7-a745-6e4401885065" />
@@ -54,7 +80,16 @@ For Software:
 <img width="1882" height="957" alt="Screenshot 2026-09-12 014119" src="https://github.com/user-attachments/assets/3a1b2931-76d8-4cc1-ab3a-a85d800847c8" />
 *A generated excuse in action ("My cat held me hostage for a second breakfast") with its believability score and verdict message.*
 
+## Workflow
 
+1. **Intro page** — mascot, stars, and an "enter" button
+2. **Select a situation** — college, friends, assignment, phone, family, or work
+3. **Set believability** — drag the dial from 0–100%
+4. **Generate excuse** — a random excuse appears
+5. From there, either:
+   - **Make it dramatic** — rewrites the excuse with theatrical flair, or
+   - **Copy it** — saves the excuse to your clipboard
+  
 ### Project Demo
 # Video
 https://drive.google.com/file/d/1gHakdPeBnlW0tfXs1rP74n8u-YBgUlGv/view?usp=drivesdk
