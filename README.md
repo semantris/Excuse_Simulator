@@ -6,7 +6,7 @@
 
 
 ## Basic Details
-### Team Name: [\SVAAG
+### Team Name: SVAAG
 
 
 ### Team Members
