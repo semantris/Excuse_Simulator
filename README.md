@@ -58,6 +58,7 @@ For Software:
 ### Project Demo
 # Video
 https://drive.google.com/file/d/1gHakdPeBnlW0tfXs1rP74n8u-YBgUlGv/view?usp=drivesdk
+The demo starts on the intro page, featuring a bobbing clown mascot and playful animations, before leading into the main Excuse Simulator. There, the user picks a situation, sets the believability dial, and clicks Generate for a random excuse — with options to Make It Dramatic or Copy It.
 
 ## Team Contributions
 - SREELAKSHMI S NAIR: Designed the UI, created HTML/CSS structure, and worked on the overall layout and styling.
